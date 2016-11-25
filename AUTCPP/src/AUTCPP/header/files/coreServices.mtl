@@ -70,7 +70,7 @@ using namespace std;[/if]
 [/template]
 
 [template public Getpath(pPkg : Package)]
-[if (name = nestingPackage)][else][Getpath(nestingPackage)/]./[name/][/if]
+[if ((pPkg<>null))][if (name= nestingPackage)][else][Getpath(nestingPackage)/]./[name/][/if][/if]
 [/template]
 
 
